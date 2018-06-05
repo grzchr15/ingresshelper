@@ -1,27 +1,11 @@
 {
     "manifest_version": 2,
     "name": "Ingress Intel Helper",
-    "version": "2.3.0",
+    "version": "2.5.2",
     "description": "Makes screenshots for intel map",
     "background": {
         "persistent": true,
-        "scripts": [
-            "core/main.js",
-            "i18n/i18n.js",
-            "core/settings.js",
-            "core/telegram.js",
-            "core/i18n_extend.js",
-            "core/task_manager.js",
-            "core/rate_us.js",
-            "core/help.module.js",
-            "core/lang.module.js",
-            "core/screenshot.module.js",
-            "core/compression.module.js",
-            "core/iitc.module.js",
-            "core/interval.module.js",
-            "core/banderavec.module.js",
-            "core/stats.module.js"
-        ]
+        "page": "background.html"
     },
     "content_scripts": [
         {
@@ -40,5 +24,5 @@
         "<all_urls>"
     ],
     "web_accessible_resources": ["iitc/*", "stats/*"],
-    "content_security_policy":"script-src 'self' 'unsafe-eval' https://api-maps.yandex.ru; object-src 'self'"
+    "content_security_policy":"script-src 'self' 'unsafe-eval' 'sha256-8voKsWSK6KaMpo2kD5znNS29tNxsTuQatkeeyU925dI=' https://cdn.mxpnl.com https://api-maps.yandex.ru; object-src 'self'"
 }

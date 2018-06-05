@@ -1,7 +1,7 @@
 /**
  * @file Interval setup and processing module
  * @author Artem Veikus artem@veikus.com
- * @version 2.2
+ * @version 2.5.1
  */
 (function() {
     var allowedTimeouts, allowedPauses, timeoutMarkup, pauseMarkup,
@@ -9,49 +9,54 @@
 
     app.modules = app.modules || {};
     app.modules.interval = Interval;
-    Interval.initMessage = '/interval';
+    initModule();
 
-    intervals = localStorage.getItem('interval__tasks');
+    /**
+     * Load previously saved intervals and set up timeouts
+     */
+    function initModule() {
+        intervals = localStorage.getItem('interval__tasks');
 
-    if (intervals) {
-        intervals = JSON.parse(intervals);
-    } else {
-        intervals = [];
+        if (intervals) {
+            intervals = JSON.parse(intervals);
+        } else {
+            intervals = [];
+        }
+
+        setInterval(function() {
+            var lang,
+                ts = new Date().getTime();
+
+            intervals.forEach(function(task, ind) {
+                if (!task) {
+                    return;
+                }
+
+                if (task.nextPhotoAt <= ts) {
+                    (function(ind) {
+                        app.taskManager.add(task, function(result, errorCode) {
+                            // Remove interval after bot lost access to group
+                            if (errorCode === 403) {
+                                delete(intervals[ind]);
+                                saveIntervals();
+                            }
+                        });
+                    }(ind));
+
+                    task.nextPhotoAt = ts + task.pause;
+                }
+
+                if (task.shutdownTime <= ts) {
+                    lang = app.settings.lang(task.chat);
+
+                    app.telegram.sendMessage(task.chat, app.i18n(lang, 'interval', 'interval_finished'));
+                    delete(intervals[ind]);
+                }
+            });
+
+            saveIntervals();
+        }, 30000);
     }
-
-    setInterval(function() {
-        var lang,
-            ts = new Date().getTime();
-
-        intervals.forEach(function(task, k) {
-            if (!task) {
-                return;
-            }
-
-            if (task.nextPhotoAt <= ts) {
-                (function(k) {
-                    app.taskManager.add(task, function(result, error) {
-                        // Remove interval after bot lost access to group
-                        if (error === 'Error: Bad Request: Not in chat' || error === 'Error: Bot was kicked from a chat') {
-                            delete(intervals[k]);
-                            saveIntervals();
-                        }
-                    });
-                }(k));
-
-                task.nextPhotoAt = ts + task.pause;
-            }
-
-            if (task.shutdownTime <= ts) {
-                lang = app.settings.lang(task.chat);
-
-                app.telegram.sendMessage(task.chat, app.i18n(lang, 'interval', 'interval_finished'));
-                delete(intervals[k]);
-            }
-        });
-
-        saveIntervals();
-    }, 30000);
 
     /**
      * @param message {object} Telegram message object
@@ -69,24 +74,35 @@
     }
 
     /**
+     * @static
+     * @param message {object} Telegram message object
+     * @returns {boolean}
+     */
+    Interval.initMessage = function(message) {
+        let text = message.text && message.text.toLowerCase();
+
+        return (text === '/interval@' + app.me.username.toLowerCase()) || (text === '/interval');
+    };
+
+    /**
      * @param message {object} Telegram message object
      */
     Interval.prototype.onMessage = function (message) {
-        var zoom, temp,
+        var zoom, actMessage,
             text = message.text,
             location = message.location;
 
         // Cancel action
-        temp = app.i18n(this.lang, 'interval', 'cancel');
-        if (text === temp) {
+        actMessage = app.i18n(this.lang, 'interval', 'cancel');
+        if (text === actMessage) {
             this.complete = true;
-            app.telegram.sendMessage(this.chat, '👍', null); // thumbs up
+            app.telegram.sendMessage(this.chat, '👍', app.getHomeMarkup(this.chat)); // thumbs up
             return;
         }
 
         // Active task warning
-        temp = app.i18n(this.lang, 'interval', 'cancel_previous_option');
-        if (this.hasTask && text === temp) {
+        actMessage = app.i18n(this.lang, 'interval', 'cancel_previous_option');
+        if (this.hasTask && text === actMessage) {
             delete intervals[this.findActiveTask()];
             saveIntervals();
 
@@ -160,11 +176,18 @@
 
         switch (step) {
             case 'activeTask':
+                keyboard = [];
+                if (this.chat > 0) {
+                    keyboard.push([{ text: app.i18n(this.lang, 'screenshot', 'send_location'), request_location: true }]);
+                }
+                keyboard.push([ app.i18n(this.lang, 'common', 'homepage') ]);
+
                 resp = app.i18n(this.lang, 'interval', 'cancel_previous');
                 markup = {
                     one_time_keyboard: true,
                     resize_keyboard: true,
                     keyboard: [
+                        [{ text: app.i18n(this.lang, 'screenshot', 'send_location'), request_location: true }],
                         [app.i18n(this.lang, 'interval', 'cancel_previous_option')]
                     ]
                 };
@@ -190,7 +213,13 @@
 
             case 'location':
                 resp = app.i18n(this.lang, 'interval', 'location_setup');
-                markup = null;
+                markup = {
+                    one_time_keyboard: true,
+                    resize_keyboard: true,
+                    keyboard: [
+                        [{ text: app.i18n(this.lang, 'screenshot', 'send_location'), request_location: true }]
+                    ]
+                };
                 break;
 
             case 'zoom':
@@ -210,7 +239,7 @@
 
             case 'complete':
                 resp = app.i18n(this.lang, 'interval', 'task_saved');
-                markup = null;
+                markup = app.getHomeMarkup(this.chat);
         }
 
         if (markup) {

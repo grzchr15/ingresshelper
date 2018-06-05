@@ -11,7 +11,7 @@
     /**
      * Add task to queue
      * @param options {object} Task options
-     * @param callback {Function} Function that will be called after telegram sent response
+     * @param callback {Function=} Function that will be called after telegram sent response
      */
     app.taskManager.add = function(options, callback) {
         options = JSON.parse(JSON.stringify(options)); // TODO: Find better way to clone objects
@@ -39,6 +39,7 @@
     };
 
 
+    // Reload data from localStorage on init
     tasks = localStorage.getItem('task_manager__tasks');
 
     if (tasks) {
@@ -47,6 +48,7 @@
         tasks = [];
     }
 
+    // Listen for messages from content script
     chrome.runtime.onMessage.addListener(function(params, sender, callback) {
         var plugins,
             action = params && params.action;
@@ -57,12 +59,9 @@
                 break;
 
             case 'getExtScripts':
-                if (inProgress) {
+                if (inProgress && app.modules.iitc) {
                     plugins = app.settings.plugins(inProgress.chat);
-                    plugins.forEach(function(val, k) {
-                        plugins[k] = location.origin + '/' + val;
-                    });
-
+                    plugins = app.modules.iitc.idToUrl(plugins);
                     callback(plugins);
                 }
                 break;
@@ -102,6 +101,7 @@
         }
 
         chrome.windows.create({ url: url, type: 'popup' }, function(window) {
+            app.activeWindow = window.id;
             task.windowId = window.id;
             task.timeoutId = setTimeout(makeScreenshot, timeout);
 
@@ -140,14 +140,21 @@
             } else {
                 compression = app.settings.compression(task.chat);
                 app.telegram.sendPhoto(task.chat, img, compression, callback);
+                app.settings.increaseReceivedScreenshots(task.chat);
 
                 // Rate us
-                if (app.rateUs) {
-                    app.rateUs(task.chat);
+                if (
+                    app.modules.rateUs &&
+                    app.settings.getReceivedScreenshots(task.chat) >= 3 &&
+                    !app.settings.getCustomProperty(task.chat, 'offeredToRate')
+                ) {
+                    app.modules.rateUs.reminder(task.chat);
+                    app.settings.setCustomProperty(task.chat, 'offeredToRate', true)
                 }
             }
 
             chrome.windows.remove(window);
+            app.activeWindow = null;
             startNextTask();
         });
     }

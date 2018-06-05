@@ -11,9 +11,14 @@ app.i18nTexts = {
 			"de": "Bilder können unkomprimiert versendet werden (erhöhtes Datenvolumen).",
 			"chde": "Bilder chönd unkomprimiert gschickt werde (meh Dateverbruuch).",
 			"es": "Puedes obtener imagenes sin comprimir (aumenta la transferencia de datos)",
-			"br": "Você pode obter imagens não comprimidas ( aumenta a transferência de dados)",
+			"br": "Você pode obter imagens não compactadas (aumenta a transferência de dados)",
 			"it": "Puoi ricevere le immagini non compresse (aumento del traffico)",
-			"ro-md": "Dumneavoastră puteți deactiva comprimarea imaginilor (E nevoie de mai mult trafic)"
+			"ro-md": "Dumneavoastră puteți deactiva comprimarea imaginilor (E nevoie de mai mult trafic)",
+			"fr": "Vous pouvez décompresser les images (augmente la taille du fichier)",
+			"nl": "U kan in gecomprimeerde afbeeldingen krijgen (maakt dataoverdracht klijner)",
+			"fa": "شما میتوناید تصاویر غیر فشرده دریافت کنید(کیفیت تصاویر و حجمشان در اینصورت بیشتر است!)",
+			"bg": "Възможно е да използвате некомпресирани .png изображения ( увеличава трафика )",
+			"se": "du kan få okomprimerade bilder (ökad datavolym)"
 		},
 		"enable": {
 			"en": "Enable compression",
@@ -27,7 +32,12 @@ app.i18nTexts = {
 			"es": "Habilitar compresión",
 			"br": "Habilitar compactação",
 			"it": "Abilita la compressione",
-			"ro-md": "Activați comprimarea"
+			"ro-md": "Activați comprimarea",
+			"fr": "Compression activée",
+			"nl": "Gecomprimeerde bestanden aan zetten",
+			"fa": "فشرده سازی فعال شود",
+			"bg": "Използвай .png компресия",
+			"se": "aktivera komprimering"
 		},
 		"disable": {
 			"en": "Disable compression",
@@ -41,7 +51,12 @@ app.i18nTexts = {
 			"es": "Deshabilitar compresión",
 			"br": "Desabilitar compactação",
 			"it": "Disabilita la compressione",
-			"ro-md": "Deactivați comprimarea"
+			"ro-md": "Deactivați comprimarea",
+			"fr": "Compression désactivée",
+			"nl": "Gecomprimeerde bestanden uit zetten",
+			"fa": "فشرده سازی غیر فعال شود",
+			"bg": "Не използвай .png компресия",
+			"se": "deaktivera komprimering"
 		},
 		"saved": {
 			"en": "Changes saved",
@@ -55,21 +70,12 @@ app.i18nTexts = {
 			"es": "Cambios guardados.",
 			"br": "Alterações salvas",
 			"it": "Modifiche salvate",
-			"ro-md": "Schimbările au fost salvate"
-		},
-		"wrong_input": {
-			"en": "Incorrect input. Please try again",
-			"ru": "Неправильный выбор. Выберите из предложенных вариантов",
-			"ua": "Неправильний вибір. Виберіть із запропонованих варіантів",
-			"zh-cmn-Hans": "输入有误，请重试",
-			"zh-cmn-Hant": "輸入有誤，請重試",
-			"fi": "Virheellinen syöte. Yritä uudelleen.",
-			"de": "Fehlerhafte Eingabe. Bitte erneut versuchen.",
-			"chde": "Fählerhafti Iigab. Bitte no einisch probiere.",
-			"es": "Entrada incorrecta. Por favor, intenta de nuevo.",
-			"br": "Entrada incorreta. Por favor, tente novamente",
-			"it": "Inserimento incorretto. Per favore, riprova.",
-			"ro-md": "Alegerea greșită. Vă rog incercati din nou"
+			"ro-md": "Schimbările au fost salvate",
+			"fr": "Changements sauvegardés",
+			"nl": "Wijzigingen opgeslagen",
+			"fa": "تغییرات ذخیره شد!",
+			"bg": "Благидаря! Промените са съхранени",
+			"se": "Ändringar är sparade"
 		}
 	},
 	"help": {
@@ -85,21 +91,20 @@ app.i18nTexts = {
 			"es": "Envía tu ubicación al bot, luego selecciona el zoom del mapa (3 - 17). ¡Feliz Ingressing!",
 			"br": "Envie a sua localização para o bot, em seguida, selecione o zoom do mapa (3-17).  Feliz Ingressing!",
 			"it": "Manda la tua posizione al bot e seleziona lo zoom della mappa (3 - 17). Buon divertimento!",
-			"ro-md": "Transmiteți botului coordonatele dumneavoastră, apoi selectati nivelul de zoom, și în cîteva minute veți primi un screenshot Intel"
+			"ro-md": "Transmiteți botului coordonatele dumneavoastră, apoi selectati nivelul de zoom, și în cîteva minute veți primi un screenshot Intel",
+			"fr": "Envoyez votre localisation au bot, puis choisissez un zoom (3 - 17). Joyeux Ingress !",
+			"nl": "Stuur uw locatie naar de bot, selecteer daarna de map met zoom (3 - 17). ",
+			"fa": "مکان خودتون رو به ربات بفرستید سپس مقدار بزرگنمایی نقشه را انتخاب کنید ",
+			"bg": "Изпратете своята локация на Bot-а, след това изберете ниво на увеличение ( от 3 - до 17).",
+			"se": "Skicka din plats till botten,välj sedan zoomgrad (3 - 17) Ha kul med Ingress!"
 		},
 		"line_2": {
-			"en": "Original idea: @veikus",
-			"ru": "Идея: @veikus",
-			"ua": "Ідея: @veikus",
-			"zh-cmn-Hans": "作者: @veikus",
-			"zh-cmn-Hant": "作者: @veikus",
-			"fi": "Alkuperäisidea: @veikus",
-			"de": "Idee: @veikus",
-			"chde": "Idee: @veikus",
-			"es": "Idea original: @veikus",
-			"br": "Idéia original:@veikus",
-			"it": "Idea originale di: @veikus",
-			"ro-md": "Idea: @veikus"
+			"en": "Support email: ingressbot@veikus.com",
+			"ru": "Email для вопросов и предложений: ingressbot@veikus.com",
+			"es": "Email de Soporte: ingressbot@veikus.com",
+			"br": "Email de Suporte: ingressbot@veikus.com",
+			"bg": "е-мейл за поддръжка: ingressbot@veikus.com ",
+			"se": "För stöd maila: ingressbot@veikus.com"
 		},
 		"line_3": {
 			"ua": "Автор українскього перекладу: @Ukrrooter",
@@ -109,8 +114,13 @@ app.i18nTexts = {
 			"de": "Deutsche Übersetzung: @murco",
 			"chde": "Schwiizerdütschi Übersetzig: @murco",
 			"es": "Traducción al español hecha por: @YersonPerez, @JorgeDominguez",
-			"br": "Traduzido para portugês por Sidnei Daleprani - Ingress @sd2 ; Telegram @daleprani",
-			"it": "Traduzione italiana di Marco Piccoli  (Telegram: @gible) e Max Ferrari (Telegram: @OniKoi) "
+			"br": "Traduzido para português por Sidnei Daleprani - Ingress: @sd2 ; Telegram: @daleprani",
+			"it": "Traduzione italiana di Marco Piccoli  (Telegram: @gible) e Max Ferrari (Telegram: @OniKoi) ",
+			"fr": "Traduit en français par @Kbueno et @Coquelibio",
+			"nl": "Nederlandse vertaling: @Lord_Roest en @Robin",
+			"fa": "ترجمه شده توسط سجاد پورمشرفی @kind_brother",
+			"bg": "(пишете на Английски) ако имате въпроси.",
+			"se": "Svensk översättning: @gloeckgal"
 		},
 		"line_4": {
 			"en": "Source code: http://github.com/veikus/ingresshelper",
@@ -124,7 +134,12 @@ app.i18nTexts = {
 			"es": "Código fuente: http://github.com/veikus/ingresshelper",
 			"br": "código fonte: http://github.com/veikus/ingresshelper",
 			"it": "Codice sorgente: http://github.com/veikus/ingresshelper",
-			"ro-md": "Codul sursă: http://github.com/veikus/ingresshelper"
+			"ro-md": "Codul sursă: http://github.com/veikus/ingresshelper",
+			"fr": "Code Source: http://github.com/veikus/ingresshelper",
+			"nl": "Broncode: http://github.com/veikus/ingresshelper",
+			"fa": "سورس کد:https://github.com/veikus/ingresshelper",
+			"bg": "Изходен код на Bot-a: http://github.com/veikus/ingresshelper",
+			"se": "Källkod: http://github.com/veikus/ingresshelper"
 		}
 	},
 	"iitc": {
@@ -138,9 +153,14 @@ app.i18nTexts = {
 			"de": "IITC plugins können in diesem Menu konfiguriert werden",
 			"chde": "IITC Plugins chönd i dem Menu konfiguriert wärde",
 			"es": "Puedes configurar los plugins de IITC desde este menú",
-			"br": "Você pode configurar  plugins do IITC neste Menu",
+			"br": "Você pode configurar os plugins do IITC neste Menu",
 			"it": "Puoi impostare i plugin IITC da questo menu",
-			"ro-md": "Dumneavoastră  puteți configura plugin-urile  IITC în meniul dat"
+			"ro-md": "Dumneavoastră  puteți configura plugin-urile  IITC în meniul dat",
+			"fr": "Vous pouvez configurer les plug-ins IITC depuis ce menu.",
+			"nl": "U kan IITC-plug-ins opstellen van deze menu's",
+			"fa": "شما میتوانید IITC راه اندازی کنید (نصب کنید) از طریق (توسط ) این منو ها",
+			"bg": "Може да настроите IITC приставката от тези менюта",
+			"se": "Du kan starta IITC-tjänster från den här menyn"
 		},
 		"status": {
 			"en": "Current status:",
@@ -154,49 +174,12 @@ app.i18nTexts = {
 			"es": "Estado actual:",
 			"br": "Situação atual:",
 			"it": "Stato attuale:",
-			"ro-md": "Statusul actual:"
-		},
-		"enabled": {
-			"en": "Plugin enabled",
-			"ru": "Плагин включен",
-			"ua": "Плагін увімкнено",
-			"zh-cmn-Hans": "插件已启用",
-			"zh-cmn-Hant": "插件已啟用",
-			"fi": "Liitännäinen käytössä.",
-			"de": "Plugin aktiviert",
-			"chde": "Plugin aktiviert",
-			"es": "Plugin activado",
-			"br": "Plugin ativado",
-			"it": "Plugin abilitato",
-			"ro-md": "Plugin-ul este activat"
-		},
-		"disabled": {
-			"en": "Plugin disabled",
-			"ru": "Плагин отключен",
-			"ua": "Плагін вимкнено",
-			"zh-cmn-Hans": "插件已停用",
-			"zh-cmn-Hant": "插件已停用",
-			"fi": "Liitännäinen poissa käytöstä.",
-			"de": "Plugin deaktiviert",
-			"chde": "Plugin deaktiviert",
-			"es": "Plugin desactivado",
-			"br": "Plugin desativado",
-			"it": "Plugin disabilitato",
-			"ro-md": "Plugin-ul este desactivat"
-		},
-		"plugin_not_found": {
-			"en": "Plugin not found",
-			"ru": "Плагин не найден",
-			"ua": "Плагін не знайдено",
-			"zh-cmn-Hans": "没有找到插件",
-			"zh-cmn-Hant": "沒有找到插件",
-			"fi": "Liitännäistä ei löytynyt.",
-			"de": "Plugin nicht gefunden",
-			"chde": "Plugin ned gfunde",
-			"es": "Plugin no encontrado.",
-			"br": "Plugin não encontrado",
-			"it": "Plugin non trovato",
-			"ro-md": "Plugin-ul nu a fost găsit"
+			"ro-md": "Statusul actual:",
+			"fr": "État actuel :",
+			"nl": "Huidige status:",
+			"fa": "وضعیت فعلی:",
+			"bg": "Текущ статус:",
+			"se": "Aktuell status:"
 		},
 		"complete_setup": {
 			"en": "Complete setup",
@@ -210,7 +193,12 @@ app.i18nTexts = {
 			"es": "Configuración completa",
 			"br": "Configuração completa",
 			"it": "Configurazione completata",
-			"ro-md": "Finisați configurările. "
+			"ro-md": "Finisați configurările. ",
+			"fr": "Valider la configuration",
+			"nl": "Complete opstelling",
+			"fa": "راه اندازی کامل شد.تبریک میگم :))",
+			"bg": "Съхраняване на настройките",
+			"se": "Tjänsten är klar."
 		}
 	},
 	"interval": {
@@ -226,7 +214,12 @@ app.i18nTexts = {
 			"es": "17 - Todos los portales",
 			"br": "17 - Todos os portais",
 			"it": "17 - Tutti i portali",
-			"ro-md": "17 - Toate portalurile"
+			"ro-md": "17 - Toate portalurile",
+			"fr": "17 - Tous les portails",
+			"nl": "17 - Alle portalen",
+			"fa": "17 - همه پورتال",
+			"bg": "17 - Най ниско",
+			"se": "17 - Alla portaler"
 		},
 		"options_2": {
 			"en": "16;15;14;13",
@@ -240,7 +233,12 @@ app.i18nTexts = {
 			"es": "16;15;14;13",
 			"br": "16;15;14;13",
 			"it": "16;15;14;13",
-			"ro-md": "16;15;14;13"
+			"ro-md": "16;15;14;13",
+			"fr": "16;15;14;13",
+			"nl": "16;15;14;13",
+			"fa": "16;15;14;13",
+			"bg": "16;15;14;13",
+			"se": "16;15;14;13"
 		},
 		"options_3": {
 			"en": "12;10;8;6",
@@ -254,7 +252,12 @@ app.i18nTexts = {
 			"es": "12;10;8;6",
 			"br": "12;10;8;6",
 			"it": "12;10;8;6",
-			"ro-md": "12;10;8;6"
+			"ro-md": "12;10;8;6",
+			"fr": "12;10;8;6",
+			"nl": "12;10;8;6",
+			"fa": "12;10;8;6",
+			"bg": "12;10;8;6",
+			"se": "12;10;8;6"
 		},
 		"options_4": {
 			"en": "3 - World",
@@ -268,7 +271,12 @@ app.i18nTexts = {
 			"es": "3 - El mundo",
 			"br": "3 - Mundial",
 			"it": "3 - Tutto il Mondo",
-			"ro-md": "3 - Toată lumea"
+			"ro-md": "3 - Toată lumea",
+			"fr": "3 - Vue mondiale",
+			"nl": "3 - Wereld",
+			"fa": "3 - جهان (دنیا)",
+			"bg": "3 - Световна карта",
+			"se": "3 - Welt"
 		},
 		"cancel": {
 			"en": "Cancel setup",
@@ -280,9 +288,14 @@ app.i18nTexts = {
 			"de": "Setup abbrechen",
 			"chde": "Setup abbreche",
 			"es": "Cancelar configuración.",
-			"br": "cancelar a configuração",
+			"br": "Cancelar a configuração",
 			"it": "Cancella la configurazione",
-			"ro-md": "Anulează configurarea"
+			"ro-md": "Anulează configurarea",
+			"fr": "Annuler la configuration",
+			"nl": "Opstelling annuleren",
+			"fa": "لغو راه اندازی",
+			"bg": "Отказ от настройките!",
+			"se": "Avbryt "
 		},
 		"cancel_previous": {
 			"en": "You already have interval task. You can cancel this task and create new one",
@@ -296,7 +309,12 @@ app.i18nTexts = {
 			"es": "Ya tienes una tarea de intervalo. Puedes cancelarla y crear una nueva.",
 			"br": "Você já tem tarefa de intervalo. Você pode cancelar esta tarefa e criar uma nova",
 			"it": "Hai già un comando salvato. Puoi cancellarlo e crearne uno nuovo.",
-			"ro-md": "La dumneavoastră deja este o sarcină activă. E nevoie de anulat sarcina precedentă, înainte de a crea o sarcină nouă. "
+			"ro-md": "La dumneavoastră deja este o sarcină activă. E nevoie de anulat sarcina precedentă, înainte de a crea o sarcină nouă. ",
+			"fr": "Vous avez déjà une requête périodique en cours. Vous pouvez l'annuler puis en créer une nouvelle.",
+			"nl": "U heeft al een interval taal. U kan deze taak annuleren en een nieuwe maken",
+			"fa": "شما در حال حاظر وظیفه به ربات داده اید .میتوانید آن را لغو و وظیفه( دستور) جدیدی اضافه کنید.",
+			"bg": "Вече има зададена интервална задача. Може да се откажето от задачата и да програмирате нова.",
+			"se": "Du har redan ett intervalluppdrag. Du kan avsluta det uppdraget och skapa ett nytt."
 		},
 		"cancel_previous_option": {
 			"en": "Cancel previous and create new",
@@ -310,7 +328,12 @@ app.i18nTexts = {
 			"es": "Cancelar la previa y configurar nueva.",
 			"br": "Cancelar anterior e criar nova",
 			"it": "Cancella la precedente e creane una nuova",
-			"ro-md": "Anulează sarcina și creați una nouă. "
+			"ro-md": "Anulează sarcina și creați una nouă. ",
+			"fr": "Annuler l'ancienne requête et en créer une nouvelle.",
+			"nl": "Vorige annuleren en een nieuwe maken",
+			"fa": "دستور قبلی را لغو کنید و و دستور جدیدی دست کنید(اضافه کنید)",
+			"bg": "Откажи предишната и създай нова",
+			"se": "Avbryt förra och skapa nytt."
 		},
 		"timeout_setup": {
 			"en": "How long do you need interval?",
@@ -324,7 +347,12 @@ app.i18nTexts = {
 			"es": "¿Cúanto tiempo necesita el intervalo?",
 			"br": "Quanto tempo de intervalo você precisa?",
 			"it": "Quanto tempo hai bisogno nell'intervallo?",
-			"ro-md": "Cît timp de creat screenshot-urile"
+			"ro-md": "Cît timp de creat screenshot-urile",
+			"fr": "Sur quelle période souhaitez-vous recevoir des screenshots ?",
+			"nl": "Hoelang heeft u een interval nodig?",
+			"fa": "تا چه مدت این سرویس را میخواهید؟",
+			"bg": "Колко дълъг е необходимия интервал?",
+			"se": "Hur länge behöver du intervallet?"
 		},
 		"pause_setup": {
 			"en": "How often do you need screenshots?",
@@ -338,7 +366,12 @@ app.i18nTexts = {
 			"es": "¿Con qué frecuencia necesita las capturas de pantalla?",
 			"br": "Com que fequência você precisa de capturas de tela?",
 			"it": "Ogni quanto tempo hai bisogno di uno screenshot?",
-			"ro-md": "Cît de des a transmite screenshot-urile ?"
+			"ro-md": "Cît de des a transmite screenshot-urile ?",
+			"fr": "A quelle fréquence souhaitez vous recevoir les screenshots ?",
+			"nl": "Hoe vaak wilt u schermafbeeldingen?",
+			"fa": "هر چه مدت یکبار به تصاویر نیاز دارید؟",
+			"bg": "Колко често се нуждаете от скрийншоти?",
+			"se": "Hur ofta behöver du skärmdumpar?"
 		},
 		"location_setup": {
 			"en": "Send geolocation now",
@@ -349,10 +382,15 @@ app.i18nTexts = {
 			"fi": "Lähetä sijaintisi.",
 			"de": "Bitte den Standort senden",
 			"chde": "Bitte de Standort schicke",
-			"es": "Envía geolocalización ahora.",
+			"es": "Envía ubicación ahora.",
 			"br": "Enviar geolocalização agora",
 			"it": "Invia la tua posizione ora",
-			"ro-md": "Transmiteți geolocația zonei dorite"
+			"ro-md": "Transmiteți geolocația zonei dorite",
+			"fr": "Envoyez votre localisation maintenant",
+			"nl": "Stuur nu uw geolocatie",
+			"fa": "منتطقه جغرافیایی خود را ارسال کنید(مکان خود)",
+			"bg": "Изпрати геолокация сега",
+			"se": "Sänd koordinater nu."
 		},
 		"zoom_setup": {
 			"en": "Select zoom level",
@@ -366,7 +404,12 @@ app.i18nTexts = {
 			"es": "Seleccione el nivel de zoom.",
 			"br": "Escolha um nível de zoom",
 			"it": "Seleziona il livello di zoom",
-			"ro-md": "Selectați scara hărții."
+			"ro-md": "Selectați scara hărții.",
+			"fr": "Choisissez le niveau de zoom",
+			"nl": "Selecteer zoomniveau",
+			"fa": "میزان بزرگنمایی را انتخاب کنید",
+			"bg": "Изберете ниво на височина",
+			"se": "Välj zoomfaktor."
 		},
 		"incorrect_input": {
 			"en": "Incorrect input",
@@ -380,7 +423,12 @@ app.i18nTexts = {
 			"es": "Entrada incorrecta.",
 			"br": "Entrada incorreta",
 			"it": "Inserimento incorretto",
-			"ro-md": "Intrare Nevalidă. Selectați una din opțiuni"
+			"ro-md": "Intrare Nevalidă. Selectați una din opțiuni",
+			"fr": "Entrée incorrecte.",
+			"nl": "Verkeerde input",
+			"fa": "ورودی نا معتبر(اشتباه)",
+			"bg": "Некоректни входни данни",
+			"se": "Fel inmatning."
 		},
 		"task_saved": {
 			"en": "Task saved. You will start to receive screenshots soon",
@@ -394,7 +442,12 @@ app.i18nTexts = {
 			"es": "Tarea guardada. Emprezarás a recibir capturas de pantalla pronto.",
 			"br": "Tarefa guardada. Você vai começar a receber screenshots em breve",
 			"it": "Comando salvato. Comincerai presto a ricevere screenshot.",
-			"ro-md": "Sarcina a fost salvată. Degrabă veți începe primi screenshot-urile."
+			"ro-md": "Sarcina a fost salvată. Degrabă veți începe primi screenshot-urile.",
+			"fr": "Tâche enregistrée. Vous commencerez à recevoir les screenshots bientôt.",
+			"nl": "Taak opgeslagen. U zal binnenkort schermafbeeldingen ontvangen",
+			"fa": "دستور شما ذخیره شد به زودی شما اسکرین شات ها را دریافت خواهید کرد!",
+			"bg": "Обработвам информацията. Благодаря!",
+			"se": "Uppdraget är sparat. Du kommer att börja få skärmdumpar inom kort."
 		},
 		"interval_finished": {
 			"en": "Interval complete. You will receive last screenshot in few minutes",
@@ -405,31 +458,41 @@ app.i18nTexts = {
 			"fi": "Aikaväli loppui. Saat viimeisen ruutukaappauksen parin minuutin sisään.",
 			"de": "Task abgeschlossen. Der letzte Screenshot wird in Kürze gesendet.",
 			"chde": "Task abgschlosse. De letscht Screenshot wird glii gschickt.",
-			"es": "Intervalo completo. Recibirás la última captura de pantalla en algunos minutos",
+			"es": "Intervalo completo. Recibirás la última captura de pantalla en algunos minutos.",
 			"br": "Intervalo completo. Você receberá a última captura de tela em poucos minutos",
 			"it": "Intervallo completo. Riceverai l'ultimo screenshot in pochi minuti.",
-			"ro-md": "Intervalul este finisat. În scurt timp veți primi ultimul screenshot."
+			"ro-md": "Intervalul este finisat. În scurt timp veți primi ultimul screenshot.",
+			"fr": "Période terminée. Vous recevrez le dernier screenshot dans quelques minutes.",
+			"nl": "Interval compleet. U zal de laatste schermafbeelding ontvangen in een paar minuten.",
+			"fa": "شما تا چند دقیقه دیگر آخرین اسکرین شات را دریافت خواهید کرد :)",
+			"bg": "Интервала приключен. Ще получите последното изображение след малко.",
+			"se": "Intervallet är kompletterat. Du kommar att få sista skärmdumpen inom några minuter."
 		}
 	},
 	"lang": {
 		"title": {
-			"en": "🇬🇧English",
-			"ru": "🇷🇺Русский",
-			"ua": "🇺🇦Українська",
-			"zh-cmn-Hans": "🇨🇳简体中文",
-			"zh-cmn-Hant": "🇨🇳繁體中文",
-			"fi": "🇫🇮Suomi",
-			"de": "🇩🇪Deutsch",
-			"chde": "🇨🇭Schwiizerdütsch",
-			"es": "🇪🇸Español",
-			"br": "🇵🇹🇧🇷Português",
-			"it": "🇮🇹Italiano",
-			"ro-md": "🇷🇺Româna / Moldovenească"
+			"en": "🇬🇧 English",
+			"ru": "🇷🇺 Русский",
+			"ua": "🇺🇦 Українська",
+			"zh-cmn-Hans": "🇨🇳 简体中文",
+			"zh-cmn-Hant": "🇨🇳 繁體中文",
+			"fi": "🇫🇮 Suomi",
+			"de": "🇩🇪 Deutsch",
+			"chde": "🇨🇭 Schwiizerdütsch",
+			"es": "🇪🇸 Español",
+			"br": "🇵🇹🇧🇷 Português",
+			"it": "🇮🇹 Italiano",
+			"ro-md": "🇷🇺 Româna / Moldovenească",
+			"fr": "🇫🇷 Français",
+			"nl": "🇳🇱 Nederlands",
+			"fa": "🇮🇷 فارسی",
+			"bg": "🇧🇬 Български / Bulgarian",
+			"se": "🇸🇪 Svenska"
 		},
 		"welcome": {
-			"en": "Please choose your language",
-			"ru": "Пожалуйста выберите язык, который вам удобней использовать",
-			"ua": "Будь ласка, оберіть мову, якою Вам зручніше користуватися",
+			"en": "Please choose your language:",
+			"ru": "Пожалуйста выберите язык, который вам удобней использовать:",
+			"ua": "Будь ласка, оберіть мову, якою Вам зручніше користуватися:",
 			"zh-cmn-Hans": "请选择语言",
 			"zh-cmn-Hant": "請選擇語言",
 			"fi": "Valitse kieli.",
@@ -438,12 +501,17 @@ app.i18nTexts = {
 			"es": "Por favor, elige tu idioma",
 			"br": "Por favor, escolha o seu idioma",
 			"it": "Per favore, scegli la tua lingua",
-			"ro-md": "Vă rugăm, selectați limba, care vă este mai comod de utilizat. "
+			"ro-md": "Vă rugăm, selectați limba, care vă este mai comod de utilizat. ",
+			"fr": "Veuillez choisir la langue",
+			"nl": "Kies alstublieft uw taal",
+			"fa": "لطفا زبان مورد نظرتون رو انتخاب کنید",
+			"bg": "Моля изберете своя език:",
+			"se": "Var vänlig och välj ditt språk:"
 		},
 		"incorrect_language": {
-			"en": "Incorrect input. Please try again",
-			"ru": "Неправильный выбор. Выберите из предложенных вариантов",
-			"ua": "Неправильне значення. Виберіть із запропонованих варіантів",
+			"en": "Incorrect input. Please select one of this options:",
+			"ru": "Неправильный выбор. Выберите из предложенных вариантов:",
+			"ua": "Неправильне значення. Виберіть із запропонованих варіантів:",
 			"zh-cmn-Hans": "输入有误，请重试",
 			"zh-cmn-Hant": "輸入有誤，請重試",
 			"fi": "Virheellinen syöte, yritä uudelleen.",
@@ -452,12 +520,17 @@ app.i18nTexts = {
 			"es": "Entrada incorrecta. Por favor, inténtalo de nuevo.",
 			"br": "Entrada incorreta. Por favor, tente novamente",
 			"it": "Inserimento incorretto. Per favore, riprova.",
-			"ro-md": "Alegerea greșită. Vă rugăm sa selectați din opîiunile propuse ."
+			"ro-md": "Alegerea greșită. Vă rugăm sa selectați din opîiunile propuse .",
+			"fr": "Entrée incorrecte. Veuillez réessayer",
+			"nl": "Foute input. Probeert het opnieuw",
+			"fa": "ورودی اشتباست. لطفا دوباره تلاش کنی",
+			"bg": "Некоректни входни данни. Моля изберете една от следните възможности:",
+			"se": "Fel inmatning. Var vänlig välj något av följande alternativ:"
 		},
 		"saved": {
-			"en": "Changes saved",
-			"ru": "Изменения сохранены",
-			"ua": "Зміни збережено",
+			"en": "Changes saved.",
+			"ru": "Изменения сохранены.",
+			"ua": "Зміни збережено.",
 			"zh-cmn-Hans": "修改完成",
 			"zh-cmn-Hant": "修改完成",
 			"fi": "Muutokset tallennettu.",
@@ -466,21 +539,20 @@ app.i18nTexts = {
 			"es": "Cambios guardados.",
 			"br": "Alterações guardadas",
 			"it": "Modifiche salvate",
-			"ro-md": "Chimbprile au fost salvate."
+			"ro-md": "Chimbprile au fost salvate.",
+			"fr": "Changements sauvegardés",
+			"nl": "Wijzigingen opgeslagen",
+			"fa": "تغییرات ذخیره شد!",
+			"bg": "Промените са съхранени.",
+			"se": "Ändringar sparade"
 		},
 		"help_us": {
-			"en": "You can translate this bot to your language. Send message to @veikus if you want to participate",
-			"ru": "Хотите помочь с переводом на другой язык? Напишите об этом @veikus",
-			"ua": "Бажаете допомогти з перекладом на інші мови? Звертайтеся до @veikus",
-			"zh-cmn-Hans": "您可以参与此机器人的本地化工作，详情请联系@veikus",
-			"zh-cmn-Hant": "您可以參與此機器人的語言翻譯，詳情請聯繫@veikus",
-			"fi": "Voit kääntää tämän botin omalle kielellesi! Lähetä viesti @veikus​ille, jos haluat osallistua kääntämiseen.",
-			"de": "Du willst den Bot in eine weitere Sprache übersetzen? Sende eine Nachricht an @veikus um deine Übersetzung einzureichen.",
-			"chde": "Du wetsch de Bot in en wiiteri Spraach übersetze? Schick eifach en Nachricht an @veikus zum dini Übersetzig iireiche.",
-			"es": "Puedes traducir este bot a tu idioma. Envía un mensaje @aveikus si quieres ayudar.",
-			"br": "Você pode traduzir este bot para o seu idioma. Envie mensagem para @veikus se você quiser participar",
-			"it": "Puoi tradurre questo bot nella tua lingua, manda un messaggio a @veikus se vuoi partecipare.",
-			"ro-md": "Doriți a ajuta cu traducerea ? Scrieți despre aceasta lui @veikus"
+			"en": "You can translate this bot to your language. Send an email to ingressbot@veikus.com if you want to participate.",
+			"ru": "Хотите помочь с переводом на другой язык? Напишите нам ingressbot@veikus.com",
+			"es": "Ayúdanos",
+			"br": "Você pode traduzir este bot para seu idioma. Envie um email para ingressbot@veikus.com se você quiser participar",
+			"bg": "Може да преведете този Bot на своя език. Изпратете ни е-мейл на ingressbot@veikus.com ако желаете да сътрудничите.",
+			"se": "du kan översätta den här botten till ditt språk. Skicka ett mail till ingressbot@veikus.com om du vill vara med och hjälpa till."
 		}
 	},
 	"main": {
@@ -496,10 +568,15 @@ app.i18nTexts = {
 			"es": "Comando desconocido.",
 			"br": "Comando desconhecido",
 			"it": "Comando sconosciuto",
-			"ro-md": "Comanda necunoscută."
+			"ro-md": "Comanda necunoscută.",
+			"fr": "Commande inconnue",
+			"nl": "Onbekende opdracht",
+			"fa": "دستور نامعتبر است(شناسایی نشد)",
+			"bg": "Непозната команда",
+			"se": "okänd inmatning."
 		},
 		"cancelled": {
-			"en": "Ok, i cancelled previous command",
+			"en": "Ok, I cancelled the previous command",
 			"ru": "Окей, команда отменена",
 			"ua": "Гаразд, команду скасовано",
 			"zh-cmn-Hans": "好的，我将取消上一条指令",
@@ -507,10 +584,15 @@ app.i18nTexts = {
 			"fi": "Peruutin edellisen komennon.",
 			"de": "Ok, vorheriger Befehl abgebrochen.",
 			"chde": "Ok, vorhärige Befehl abbroche.",
-			"es": "Ok, cancelé comando anterior.",
+			"es": "Ok, cancelé el comando anterior.",
 			"br": "Ok, Cancelei o comando anterior",
 			"it": "Ok, ho cancellato il comando precedente",
-			"ro-md": "Okey,am anulat comanda precedentă. "
+			"ro-md": "Okey,am anulat comanda precedentă. ",
+			"fr": "Ok, j'ai supprimé la commande précédente.",
+			"nl": "Oké, vorige opdracht geannuleerd",
+			"fa": "دستور قبلی شما لغو شد!",
+			"bg": "Ок, прекратявам интервалното изпращане на изображения, приятен ден!",
+			"se": "Ok, jag avbröt föregående befäl"
 		},
 		"rate_us_1": {
 			"en": "⭐⭐⭐⭐⭐",
@@ -522,19 +604,28 @@ app.i18nTexts = {
 			"es": "⭐⭐⭐⭐⭐",
 			"br": "⭐⭐⭐⭐⭐",
 			"it": "⭐⭐⭐⭐⭐",
-			"ro-md": "⭐⭐⭐⭐⭐"
+			"ro-md": "⭐⭐⭐⭐⭐",
+			"nl": "⭐⭐⭐⭐⭐",
+			"fa": "⭐⭐⭐⭐⭐",
+			"bg": "⭐⭐⭐⭐⭐",
+			"se": "⭐⭐⭐⭐⭐"
 		},
 		"rate_us_2": {
-			"en": "Please rate us in the storebot",
-			"ru": "Пожалуйста оцените нашего бота",
-			"ua": "Оцініть нас в storebot",
+			"en": "Please rate us in the storebot:",
+			"ru": "Пожалуйста оцените нашего бота:",
+			"ua": "Оцініть нас в storebot:",
 			"fi": "Arvostele tämä botti @storebot​issa:",
 			"de": "Wir würden uns über eine Bewertung beim storebot freuen!",
 			"chde": "Mier würded eus über en bewertig bim storebot freue!",
-			"es": "Por favor califícanos en storebot",
+			"es": "Por favor califícanos en la storebot",
 			"br": "Por favor, classifique-nos no storebot",
 			"it": "Per favore, valutaci nello storebot",
-			"ro-md": "Vă rugăm să ne evaluați în storebot."
+			"ro-md": "Vă rugăm să ne evaluați în storebot.",
+			"fr": "Merci de nous évaluer dans le storebot",
+			"nl": "Beoordeel ons in de storebot",
+			"fa": "لطفا به ما در استور بات رای دهید! ",
+			"bg": "Моля гласувайте за нас в сториборда:",
+			"se": "Var vänlig och bedömsätt oss i storebot:"
 		},
 		"rate_us_3": {
 			"en": "http://telegram.me/storebot?start=ingressmap_bot",
@@ -546,14 +637,19 @@ app.i18nTexts = {
 			"es": "http://telegram.me/storebot?start=ingressmap_bot",
 			"br": "http://telegram.me/storebot?start=ingressmap_bot",
 			"it": "http://telegram.me/storebot?start=ingressmap_bot",
-			"ro-md": "http://telegram.me/storebot?start=ingressmap_bot"
+			"ro-md": "http://telegram.me/storebot?start=ingressmap_bot",
+			"fr": "http://telegram.me/storebot?start=ingressmap_bot",
+			"nl": "http://telegram.me/storebot?start=ingressmap_bot",
+			"fa": "http://telegram.me/storebot?start=ingressmap_bot",
+			"bg": "http://telegram.me/storebot?start=ingressmap_bot",
+			"se": "http://telegram.me/storebot?start=ingressmap_bot"
 		}
 	},
 	"screenshot": {
 		"zoom_setup": {
-			"en": "Select zoom level",
-			"ru": "Выберите масштаб карты",
-			"ua": "Оберіть масштаб мапи",
+			"en": "Select a zoom level:",
+			"ru": "Выберите масштаб карты:",
+			"ua": "Оберіть масштаб мапи:",
 			"zh-cmn-Hans": "选择放大级别",
 			"zh-cmn-Hant": "選擇放大級別",
 			"fi": "Valitse zoomaustaso.",
@@ -562,49 +658,50 @@ app.i18nTexts = {
 			"es": "Selecciona el nivel de zoom.",
 			"br": "Escolha um nível de zoom",
 			"it": "Seleziona il livello dello zoom",
-			"ro-md": "Selectați scara hărții"
-		},
-		"incorrect_input": {
-			"en": "Incorrect input",
-			"ru": "Неверный ввод. Выберите из предложенных вариантов",
-			"ua": "Неправильне значення. Оберіть із запропонованих варіантів",
-			"zh-cmn-Hans": "输入有误",
-			"zh-cmn-Hant": "輸入有誤",
-			"fi": "Virheellinen syöte",
-			"de": "Fehlerhafte Eingabe",
-			"chde": "Fählerhafti Iigab",
-			"es": "Entrada incorrecta.",
-			"br": "Entrada incorreta",
-			"it": "Inserimento incorretto",
-			"ro-md": "Intrare Nevalidă. Selectați una din opțiuni"
+			"ro-md": "Selectați scara hărții",
+			"fr": "Sélectionnez le niveau de zoom",
+			"nl": "Selecteer zoomniveau",
+			"fa": "میزان بزرگنمایی را انتخاب کنید",
+			"bg": "Изберете ниво на увеличение:",
+			"se": "Välj en zoomgrad:"
 		},
 		"task_saved": {
-			"en": "Task saved. Please wait for a few minutes",
-			"ru": "Задача сохранена. Через несколько минут вы получите скриншот",
-			"ua": "Завдання збережено. За декілька хвилин Ви отримаєте знімок",
+			"en": "Task saved. Please wait for a few minutes.",
+			"ru": "Задача сохранена. Через несколько минут вы получите скриншот.",
+			"ua": "Завдання збережено. За декілька хвилин Ви отримаєте знімок.",
 			"zh-cmn-Hans": "任务保存完成，请稍候",
 			"zh-cmn-Hant": "任務保存完成，請稍候",
 			"fi": "Tehtävä tallennettu. Odota hetki.",
 			"de": "Task gespeichert. Bitte einige Minuten warten.",
 			"chde": "Task gspeicheret. Bitte es paar minute warte.",
 			"es": "Tarea guardada. Por favor espera unos minutos.",
-			"br": "Tarefa guardada. Por favor, aguarde por alguns minutos",
+			"br": "Tarefa guardada. Por favor, aguarde um pouco",
 			"it": "Comando salvato, Per favore, attendi qualche minuto",
-			"ro-md": "Sarcina este salvat. După câteva minute, vei primi un screenshot"
+			"ro-md": "Sarcina este salvat. După câteva minute, vei primi un screenshot",
+			"fr": "Tâche enregistrée. Merci d'attendre quelques minutes.",
+			"nl": "Taak opgeslagen. Wacht alstublieft een paar minuten",
+			"fa": "دستور یا وظیفه ذخیره شد لطفا برای چند دقیقه صبر کنید...",
+			"bg": "Обработвам информацията. Благодаря !",
+			"se": "Uppdraget är sparat. Var vänlig vänta några minuter."
 		},
 		"location_required": {
-			"en": "Send geolocation now",
-			"ru": "Пришлите геолокацию нужной области",
-			"ua": "Надішліть геолокацію необхідної області",
+			"en": "Send geolocation now.",
+			"ru": "Пришлите геолокацию нужной области.",
+			"ua": "Надішліть геолокацію необхідної області.",
 			"zh-cmn-Hans": "选择放大级别",
 			"zh-cmn-Hant": "選擇放大級別",
 			"fi": "Lähetä sijaintisi.",
 			"de": "Bitte den Standort senden",
 			"chde": "Bitte de Standort schicke",
-			"es": "Envía geolocalización ahora.",
+			"es": "Envía ubicación ahora.",
 			"br": "Enviar geolocalização agora",
 			"it": "Manda adesso la tua posizione",
-			"ro-md": "Trimite geolocația zonei dorite"
+			"ro-md": "Trimite geolocația zonei dorite",
+			"fr": "Envoyez votre localisation maintenant",
+			"nl": "Stuur nu uw geolocatie",
+			"fa": "منتطقه جغرافیایی خود را ارسال کنید(مکان خود)",
+			"bg": "Изпратете геолокация моля.",
+			"se": "Skicka koordinater nu."
 		},
 		"options_1": {
 			"en": "17 - All portals",
@@ -618,7 +715,11 @@ app.i18nTexts = {
 			"es": "17 - Todos los portales",
 			"br": "17 - Todos os portais",
 			"it": "17 - Tutti i portali",
-			"ro-md": "17 - Toate portalurile"
+			"ro-md": "17 - Toate portalurile",
+			"fr": "17 - Tous les portails",
+			"nl": "17 - Alle portalen",
+			"bg": "17 - Най ниско",
+			"se": "17 - Alla portaler"
 		},
 		"options_2": {
 			"en": "16;15;14;13",
@@ -632,7 +733,11 @@ app.i18nTexts = {
 			"es": "16;15;14;13",
 			"br": "16;15;14;13",
 			"it": "16;15;14;13",
-			"ro-md": "16;15;14;13"
+			"ro-md": "16;15;14;13",
+			"fr": "16;15;14;13",
+			"nl": "16;15;14;13",
+			"bg": "16;15;14;13",
+			"se": "16;15;14;13"
 		},
 		"options_3": {
 			"en": "12;10;8;6",
@@ -646,7 +751,11 @@ app.i18nTexts = {
 			"es": "12;10;8;6",
 			"br": "12;10;8;6",
 			"it": "12;10;8;6",
-			"ro-md": "12;10;8;6"
+			"ro-md": "12;10;8;6",
+			"fr": "12;10;8;6",
+			"nl": "12;10;8;6",
+			"bg": "12;10;8;6",
+			"se": "12;10;8;6"
 		},
 		"options_4": {
 			"en": "3 - World",
@@ -660,12 +769,24 @@ app.i18nTexts = {
 			"es": "3 - Mundo",
 			"br": "3 - Mundial",
 			"it": "3 - Mondo",
-			"ro-md": "3 - Toată lumea"
+			"ro-md": "3 - Toată lumea",
+			"fr": "3 - Vue mondiale",
+			"nl": "3 - Wereld",
+			"bg": "3 - Световна карта",
+			"se": "3 - Världen"
+		},
+		"send_location": {
+			"en": "Send current location",
+			"ru": "Поделиться геолокацией",
+			"es": "Enviar ubicación",
+			"br": "Enviar Localização",
+			"bg": "Изпратете геолокация моля.",
+			"se": "Skicka platsen."
 		}
 	},
 	"tasks": {
 		"something_went_wrong": {
-			"en": "I`m sorry. Looks like something comes really wrong. Please try again in few minutes",
+			"en": "I'm sorry. It looks like something went wrong. Please try again in a few minutes.",
 			"ru": "Ой. Что-то пошло не так. Пожалуйста, попробуйте еще раз через пару минут",
 			"ua": "Вибачте, але щось пішло не так. Будь ласка, спробуйте знову за декілька хвилин",
 			"zh-cmn-Hans": "不好意思，机器人好像出错了，请稍后再试",
@@ -676,20 +797,253 @@ app.i18nTexts = {
 			"es": "Lo siento. Parece que algo está realmente mal. Vuelve a intentarlo en unos minutos.",
 			"br": "Desculpe. Parece que algo deu errado. Por favor, tente novamente em alguns minutos",
 			"it": "Mi dispiace. Sembra che qualcosa sia andato storto. Riprova tra qualche minuto",
-			"ro-md": "Oh. Ceva n-a mers bine. Vă rugăm să încercați din nou în câteva minute"
+			"ro-md": "Oh. Ceva n-a mers bine. Vă rugăm să încercați din nou în câteva minute",
+			"fr": "Je suis désolé. Quelque chose a l'air de s'être mal déroulé. Merci de réessayer dans quelques minutes.",
+			"nl": "Het spijt mij. Waarschijnlijk werkt er iets niet. Probeert u het alstublieft opnieuw over een paar minuten",
+			"fa": "من متاسفم به نظر میاد یک چیزی اشتباست لطفا چند دقیقه دیگر دوباره تلاش کنید ",
+			"bg": "Съжалявам. Изглежда има проблем. Опитайте отново по късно.",
+			"se": "Jag är ledsen. Det verkar ha blivit något fel. Var vänlig försök igen om några minuter."
 		}
 	},
 	"stats": {
 		"tasks_in_queue": {
 			"en": "Tasks in queue: ",
 			"ru": "Задач в очереди:",
+			"ua": "Завдань у черзі:",
 			"fi": "Tehtäviä jonossa:",
 			"de": "Tasks in Warteschlange:",
 			"chde": "Wartendi Tasks:",
 			"es": "Solicitud en cola:",
 			"br": "Tarefas na fila:",
 			"it": "Comandi in attesa",
-			"ro-md": "Sarcini în așteptare:"
+			"ro-md": "Sarcini în așteptare:",
+			"fr": "Demandes en attente :",
+			"nl": "Taken in de rij:",
+			"fa": "وظایف در صف:",
+			"bg": "На опашката има задачи:",
+			"se": "Uppdrag i kö."
+		}
+	},
+	"common": {
+		"rate_us": {
+			"en": "Rate us",
+			"ru": "Оценить бота",
+			"ua": "Оцінити бота",
+			"fi": "Arvostele tämä botti.",
+			"de": "Bewerte uns",
+			"chde": "Bewärt eus",
+			"es": "Califícanos",
+			"br": "Avalie nosso app",
+			"fr": "Evaluez nous",
+			"nl": "Beoordeel ons",
+			"bg": "Моля гласувайте за нас",
+			"se": "bedöm oss."
+		},
+		"subscibe": {
+			"en": "Subscribe newsletter",
+			"ru": "Подписаться на новости",
+			"ua": "Підписатися на новини",
+			"fi": "Tilaa uutiskirje.",
+			"de": "Newsletter abonnieren",
+			"chde": "Newsletter abonniere",
+			"es": "Suscríbete a las noticias",
+			"br": "Subscrever para receber notícias",
+			"fr": "Abonnez vous à la newsletter",
+			"nl": "Abonneren op nieuwsbrief",
+			"bg": "Запишете се за новини",
+			"se": "prenumerera vårat nyhetsbrev"
+		},
+		"unsubscribe": {
+			"en": "Unsubscribe newsletter",
+			"ru": "Отписаться от новостей",
+			"ua": "Відписатися від новин",
+			"fi": "Lopeta uutiskirjeen tilaus.",
+			"de": "Newsletter deabonnieren",
+			"chde": "Newsletter deabonniere",
+			"es": "Desuscribirte de las noticias",
+			"br": "Cancelar Subscrição",
+			"fr": "Désabonnez vous de la newsletter",
+			"nl": "Uitschrijven van nieuwsbrief",
+			"bg": "Отпишете се от новините",
+			"se": "avsluta din prenumeration på vårt nyhetsbrev"
+		},
+		"homepage": {
+			"en": "Back to actions list",
+			"ru": "К списку действий",
+			"ua": "До списку дій",
+			"fi": "Takaisin toimintolistaan.",
+			"de": "Zurück zur Befehlsliste",
+			"chde": "Zrugg zu de Befehlslischte",
+			"es": "Volver a la lista de acciones",
+			"br": "Voltar à lista de ações",
+			"fr": "Retour à la liste d'actions",
+			"nl": "Terug naar lijst met acties",
+			"bg": "Обратно в списъка с команди",
+			"se": "tillbaka till framsidan."
+		},
+		"make_screenshot": {
+			"en": "Make screenshot",
+			"ru": "Запросить скриншот",
+			"ua": "Запит на знімок екрану",
+			"fi": "Ota kuvankaappaus.",
+			"de": "Screenshot machen",
+			"chde": "Schreenshot mache",
+			"es": "Hacer screenshot",
+			"br": "Tirar Screenshot",
+			"fr": "Faire un screenshot",
+			"nl": "Schermafbeelding maken",
+			"bg": "Изпрати screenshot",
+			"se": "gör skärmdump"
+		},
+		"location_help": {
+			"en": "💡 To send location press \"📎 > Location\".",
+			"ru": "💡 Для отправки локации нажмите  \"📎 > Location\".",
+			"ua": "💡 Щоб надіслати локацію натисніть  \"📎 > Location\".",
+			"fi": "💡 Lähettääksesi sijaintisi, paina 📎 → Location.",
+			"de": "💡 Drücke \"📎 > Standort\" um deinen Standort zu senden",
+			"chde": "💡 Über \"📎 > Standort\" chasch din Standort schicke.",
+			"es": "💡 Para enviar ubicación presiona \"📎\" > \"Ubicación\"",
+			"br": "💡 Para enviar localização pressione \"📎\" > \"localização\"",
+			"fr": "💡 Pour envoyer votre localisation choisir \"📎 > Location\"",
+			"nl": "💡 Druk op \"📎 > Locatie\" om je locatie te sturen.",
+			"bg": "💡 За изпращане на локация използвайте \"📎 бутона >след това Location\".",
+			"se": "💡 För att skicka din plats, tryck \"📎 > Plats\"."
+		},
+		"what_is_ingress_option": {
+			"en": "What is Ingress?",
+			"ru": "Что такое ingress?",
+			"ua": "Що таке Ingress?",
+			"fi": "Mikä Ingress on?",
+			"de": "Was ist Ingress?",
+			"chde": "Was isch Ingress?",
+			"es": "¿Qué es Ingress?",
+			"br": "O que é Ingress?",
+			"fr": "Ingress, qu'est-ce ?",
+			"nl": "Wat is Ingress?",
+			"bg": "Какво е Ingress?"
+		},
+		"what_is_ingress_resp_1": {
+			"en": "Ingress is a multiplayer online location-based game created by Niantic Labs. Download it on http://ingress.com",
+			"ru": "Ingress - это многопользовательская мобильная игра, разработанная Niantic Labs. Скачайте её на http://ingress.com",
+			"ua": "Ingress - це багатокористувацька мобільна гра, розроблена Niantic Labs. Завантажте її на http://ingress.com",
+			"fi": "Ingress on moninpelattava sijaintipohjainen peli, jota kehittää Niantic Labs. Lataa peli osoitteesta http://ingress.com.",
+			"de": "Ingress ist ein standortbasiertes online multiplayer Game, welches von Niantic Labs entwickelt wurde. Download: http://ingress.com",
+			"chde": "Ingress isch es standort basierends online multiplayer Game wo vo Niantic LAbs erstellt worde isch. Download: http://ingress.com",
+			"es": "Ingress es un juego en línea multijugador que funciona con la ubicación GPS creado por Niantic Labs. Descárgalo en http://ingress.com",
+			"br": "Ingress é um jogo multiplayer online  baseado em localização, criado por Niantic Labs. Baixe-o em http://ingress.com",
+			"fr": "Ingress est un jeu multijoueur en ligne basé sur la localisation, créé par Niantic Labs. Télécharger sur http://ingress.com",
+			"nl": "Ingress is een multiplayer online locatiegebaseerd spel gemaakt door Niantic Labs. Download het op http://ingress.com",
+			"bg": "Ingress е локационно базирана онлайн игра създадена от Niantic Labs. Налична е на адрес: http://ingress.com"
+		},
+		"what_is_ingress_resp_2": {
+			"en": "This bot is useless if you're not an ingress player.",
+			"ru": "Бот будет полезен только игрокам в ingress.",
+			"ua": "Цей бот буде корисним лише для гравців Ingress.",
+			"fi": "Tästä botti on hyödyllinen ainoastaan Ingress-pelaajille.",
+			"de": "Dieser Bot ist nutzlos für dich, wenn du kein Ingress-Spieler bist.",
+			"chde": "De Bot bringt der absolut GAAAR NÜÜT, wenn kein Ingress Spieler bisch.",
+			"es": "Este bot no te sirve de nada si no eres un jugador de Ingress.",
+			"br": "Este bot é inútil se você não é um jogador de Ingress.",
+			"fr": "Ce bot ne sert à rien si vous n'êtes pas un joueur d'Ingress.",
+			"nl": "Deze bot is waardeloos als je geen Ingress-speler bent.",
+			"bg": "Този Bot е безполезен ако не играете Ingress.",
+			"se": "Den här botten är onödig om du inte spelar ingress."
+		},
+		"welcome_message": {
+			"en": "Thank you for installing me. I will do best to help you.",
+			"ru": "Спасибо за то, что установили меня. Я сделаю все, что в моих силах, чтобы помогать вам.",
+			"es": "Gracias por instalarme. Espero ser de ayuda.",
+			"br": "Obrigado por instalar. Irei fazer o melhor para ajudar você.",
+			"bg": "Благодаря ви че ме инсталирахте. Ще дам най доброто от себеси за да ви бъда от помощ.",
+			"se": "Tack för att du installerade mig. Jag ska göra mitt bästa att hjälpa dig."
+		},
+		"device_poll": {
+			"en": "Poll: What`s your device?",
+			"ru": "Опрос: Какое у вас устройство?",
+			"ua": "Опитування: який у вас девайс?",
+			"fi": "Kysely: Mitä laitetta käytät?",
+			"es": "Encuesta: ¿Cuál es tu dispositivo?",
+			"br": "Enquete: Qual é seu dispositivo?",
+			"fr": "Sondage : Quel est votre appareil ?",
+			"bg": "Анкета: Какво устройство ползвате?"
+		},
+		"device_poll_resp": {
+			"en": "Thank you for your vote",
+			"ru": "Спасибо за ваш голос",
+			"ua": "Дякую за ваш голос",
+			"fi": "Kiitos, että asensit minut. Lähetä minulle sijainti saadaksesi Intel-kuvankaappauksia.",
+			"es": "Gracias por tu voto",
+			"br": "Obrigado pelo voto.",
+			"fr": "Merci pour votre vote",
+			"bg": "Благодарим Ви за гласа"
+		},
+		"language": {
+			"en": "Change language",
+			"ru": "Изменить язык",
+			"ua": "Змінити мову",
+			"fi": "Vaihda kieltä.",
+			"es": "Cambiar idioma",
+			"br": "Mudar idioma",
+			"fr": "Changer de langue",
+			"nl": "Taal veranderen",
+			"bg": "Език (Language)",
+			"se": "Ändra språk"
+		},
+		"iitc_setup": {
+			"en": "Setup IITC",
+			"ru": "Настроить IITC",
+			"ua": "Налаштувати IITC",
+			"fi": "Asenna IITC.",
+			"es": "Configuración IITC",
+			"br": "Configurações do IITC",
+			"fr": "Configurer IITC",
+			"nl": "IITC instellen",
+			"bg": "Настройка на IITC",
+			"se": "ställ in IITC"
+		},
+		"home_screen_title": {
+			"en": "Please select action:",
+			"ru": "Пожалуйста, выберите действие:",
+			"es": "Por favor seleccione una acción",
+			"br": "Por favor selcione uma ação:",
+			"bg": "Моля изберете действие:",
+			"se": "Var vänlig välj åtgärd:"
+		},
+		"history": {
+			"en": "History",
+			"ru": "История",
+			"es": "Historial",
+			"br": "Histórico",
+			"bg": "История",
+			"se": "Historia:"
+		},
+		"compression": {
+			"en": "Compression settings",
+			"ru": "Настройка оптимизации",
+			"bg": "(png) Компресия",
+			"se": "Komprimering"
+		},
+		"help": {
+			"en": "About bot",
+			"ru": "О боте",
+			"bg": "Относно Bot-а",
+			"se": "Om denna bot"
+		}
+	},
+	"history": {
+		"title": {
+			"en": "Your last %n request(s):",
+			"ru": "Последние %n запрос(ов):",
+			"es": "Sus últimas %n peticiones:",
+			"br": "Suas últimas %n requisições:",
+			"bg": "Вашето последно %n заявка(и):",
+			"se": "dina sista %n förfrågor:"
+		},
+		"no_data": {
+			"en": "You don`t have any records yet",
+			"ru": "В истории пока нет записей",
+			"bg": "Все още нямате записани заявки",
+			"se": "du har inga informationer ännu."
 		}
 	}
 };
